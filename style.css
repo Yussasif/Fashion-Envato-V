@@ -172,6 +172,15 @@ display: none;
 }
 .clientBrands{
     margin-bottom: 5vh;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.brand-logo{
+    width: 33.33%;
+    padding: 3vh 2vw 3vh 2vw;
+}
+.brand-logo > img{
+    width: 100%;
 }
 .contactMe{
     margin-bottom: 5vh;

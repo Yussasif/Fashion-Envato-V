@@ -82,10 +82,76 @@ display: none;
 }
 .sectionTwo{
     display: flex;
+    margin-top: 5vh;
     flex-wrap: wrap;
-    
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
+.sectionTwoimg{
+    width: 40%;
+}
+.sectionTwotext{
+    width: 60%;
+    padding-top: 5vh;
+    padding-left: 3vw;
+}
+.sectionTwotext > h3{
+    color: #404040;
+    font-size: 2vw;
+    margin-bottom: 5vh;
 
+}
+.sectionTwotext > p{
+    margin-bottom: 5vh;
+    line-height: 24px;
+    font-size: 1vw;
+}
+.sectionThree{
+    margin-top: 5vh;
+}
+.sectionThreeup{
+    width:100%;
+    text-align: center;
+}
+.sectionThreeup > h3{
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.sectionThreeup > p{
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.sectionThreedown{
+    display: grid;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    grid-template-areas: 
+    'a b c'
+    'd e f';
+    column-gap: 1vw;
+    row-gap: 2vh;
+}
+.box1{
+    grid-area: a;
+    width: 1/3em;
+}
+.box2{
+    grid-area: b;
+}
+.box3{
+    grid-area: c;
+}
+.box4{
+    grid-area: d;
+}
+.box5{
+    grid-area: e;
+}
+.box6{
+    grid-area: f;
+}
  @media screen and (min-width: 376px) and (max-width: 768px ) {
     .hero-text{
         margin-top: 50vh;

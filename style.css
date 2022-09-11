@@ -152,6 +152,41 @@ display: none;
 .box6{
     grid-area: f;
 }
+.view-all{
+    width: 100%;
+    text-align: center;
+}
+.sectionFour{
+    margin-top: 5vh;
+    padding: 0 5vw 0 5vw;
+}
+.ourClients > h3, .contactMe > h3{
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.ourClients > p, .contactMe > p{
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.clientBrands{
+    margin-bottom: 5vh;
+}
+.contactMe{
+    margin-bottom: 5vh;
+}
+.contactForm{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contactimg{
+    width: 40%;
+}
+.contactInfo{
+    width: 60%;
+}
  @media screen and (min-width: 376px) and (max-width: 768px ) {
     .hero-text{
         margin-top: 50vh;

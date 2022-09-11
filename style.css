@@ -4,7 +4,7 @@
     box-sizing: border-box;
     max-width: 100%;
 }
-.body{
+body{
     background-color: #F2F2F2;
 }
 .hero{
@@ -14,6 +14,12 @@
     background-size: cover;
     height: 100vh;
 
+}
+.hamburger{
+display: none;
+}
+.hide-ham{
+    display: none;
 }
 .navbar{
     padding: 1.5rem;
@@ -35,7 +41,7 @@
 
 
 .hero-text{
-    margin-top: 40vh;
+    margin-top: 30vh;
     margin-left: 5vw;
     max-width: 467px;
 }
@@ -50,6 +56,35 @@
     margin-top: 3vh;
     font-size: 1.2vw;
 }
+.hire-me{
+    margin-top: 3vh;
+    width: 200px;
+}
+.hire-btn{
+    border: 1px solid black;
+    background: none;
+    padding: 20px;
+    font-size: 15px;
+    width: 189px;
+    
+}
+.media-icon{
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+    position: relative;
+    top: -70px;
+    right: 0;
+}
+.icon-link{
+    margin-bottom: 3vh;
+}
+.sectionTwo{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
  @media screen and (min-width: 376px) and (max-width: 768px ) {
     .hero-text{
@@ -57,10 +92,10 @@
         margin-left: 6vw;
         max-width: 360px
     }
-    .navbar{
+    /* .navbar{
         visibility: hidden;
    
-    }
+    } */
     .hero-text > h1{
     
         font-size: 1.5rem;
@@ -80,10 +115,12 @@
     .hero{
         background-image: url(images/mobile-hero.png);
         background-size: cover;
+        height: 100vh;
         
     }
-    .navbar{
-        visibility: hidden;
+    .navlist{
+        display: none;
+        visibility: hidden; 
     }
     .hero-text{
         margin-top: 55vh;
@@ -100,4 +137,103 @@
         font-size: 3vw;
         color: white;
 }
+}
+@media screen and (max-width: 512px){
+    .navlist{
+        display: none;
+    }
+    .navbar{
+        margin: auto;
+        width: 100%;
+    }
+    .hamburger{
+        display: block;
+        position: relative;
+        background: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: all 0.25s;
+    }
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:30px;
+        height: 3px;
+        background-color: black;
+        transform: rotate(0);
+        transition: all 0.5s;
+    }
+    @media screen and (max-width: 375px) {
+        .hamburger-top,
+        .hamburger-middle,
+        .hamburger-bottom {
+            background-color: white;
+        }
+    }
+    .hamburger-middle{
+        transform: translateY(10px);
+    }
+    .hamburger-bottom{
+        transform: translateY(20px);
+    }
+    .open{
+        transform: rotate(90deg);
+        transform: translateY(0px);
+    }
+    .open .hamburger-top{
+        transform: rotate(45deg) translateY(6px) translate(6px);
+    }
+    .open .hamburger-middle{
+        display: none;
+    }
+    .open .hamburger-bottom{
+        transform: rotate(-45deg) translateY(6px) translate(-6px);
+    }
+    /* .hide-ham{
+        visibility: hidden;
+    }
+    .view-ham{
+        display: flex;
+        position: relative;
+        top: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* background-color: #f2f2f2;
+        padding: 10px 0 10px 0;
+        cursor: pointer;
+    }
+    .view{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .navlink{
+        margin-top: 10px;
+    } */
+    
+    .view .view-ham{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f2f2f2;
+        padding: 20px;
+        position: absolute;
+        width: 80%;
+        visibility: visible;
+
+    } 
+    .hide-ham{
+        visibility: hidden;
+        
+    }
+    .navlink{
+        margin-bottom: 20px;
+    }
 }

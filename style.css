@@ -253,32 +253,79 @@ footer{
 .icon-linkf{
     margin: 10px;
 }
- @media screen and (min-width: 376px) and (max-width: 768px ) {
+
+/* Tabs and ipads */
+ @media screen and (min-width: 401px) and (max-width: 800px ) {
     .hero-text{
-        margin-top: 50vh;
+        margin-top: 40vh;
         margin-left: 6vw;
-        max-width: 360px
+        max-width: 300px
     }
-    /* .navbar{
-        visibility: hidden;
-   
+    /* .navlink{
+        display: none;
     } */
+
     .hero-text > h1{
     
         font-size: 1.5rem;
         color: #000000;
     }
     .hero-text > p{
-        margin-top: 3vh;
+        margin-top: 2vh;
         font-size: .9rem;
         color: #b4b3b3;
-}
+        width: 350px;
+    }
+    .hire-me{
+        margin-top: 2vh;
+        width: 200px;
+    }
+    .hire-btn{
+        border: 1px solid black;
+        background: none;
+        padding: 10px;
+        font-size: 10px;
+        width: 100px;
+    
+    }
+    .sectionTwo{
+        background-color: purple;
+
+        display: flex;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 2vw;
+    }
+    .sectionTwoimg{
+        width: 30%;
+    }
+    .sectionTwotext{
+        width: 70%;
+        padding-top: 2vh;
+        padding-left: 3vw;
+        background-color: red;
+    }
+    .sectionTwotext > h3{
+        color: #404040;
+        font-size: 3vw;
+        margin-bottom: 2vh;
+    
+    }
+    .sectionTwotext > p{
+        margin-bottom: 5vh;
+        line-height: 3vh;
+        /* font-size: 1vw; */
+        font-size: 3vw;
+        width: 100%;
+        background-color: blue;
+    }
 } 
 
 
 
 /* //mobile */
-@media screen and (max-width: 375px ) {
+@media screen and (max-width: 400px ) {
     .hero{
         background-image: url(images/mobile-hero.png);
         background-size: cover;
